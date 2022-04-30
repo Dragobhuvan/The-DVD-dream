@@ -1,0 +1,56 @@
+body{
+  background-color: grey;
+}
+header{
+  text-align: center;
+}
+/*----------------------------slelectors-------*/
+
+.screen{
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  height: 600px;
+  width:600px;
+  margin:auto;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width:15%;
+    position: relative;
+    /*background-color: blue;*/
+    animation-name: movement;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+@keyframes movement{
+  0%{
+    background-color: violet; left: 0; top: 50%;
+  }
+  15%{
+    background-color: indigo; left: 50%; top: 0;
+  }
+  30%{
+    background-color: blue; left: 510px;; top: 205px;
+  }
+  45%{
+    background-color: green; left: 205px;; top: 510px;
+  }
+  60%{
+    background-color:yellow ; left: 0px;; top: 0px;
+  }
+  75%{
+    background-color: orange; left: 510px;; top: 510px;
+  }
+  100%{
+    background-color: red; left: 205px;; top: 205px;
+  }
+}
